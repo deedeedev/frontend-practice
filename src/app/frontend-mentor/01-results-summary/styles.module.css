@@ -1,0 +1,190 @@
+@font-face {
+  font-family: "Hanken Grotesk";
+  src: url("/frontend-mentor/01-results-summary/fonts/HankenGrotesk-VariableFont_wght.ttf");
+}
+
+.main {
+  --primary-red: hsl(0, 100%, 67%);
+  --primary-orangey-yellow: hsl(39, 100%, 56%);
+  --primary-green-teal: hsl(166, 100%, 37%);
+  --primary-cobalt-blue: hsl(234, 85%, 45%);
+  --gradient-light-slate-blue: hsl(252, 100%, 67%);
+  --gradient-light-royal-blue: hsl(241, 81%, 54%);
+  --gradient-violet-blue: hsla(256, 72%, 46%, 1);
+  --gradient-persian-blue: hsla(241, 72%, 46%, 0);
+  --neutral-white: hsl(0, 0%, 100%);
+  --neutral-pale-blue: hsl(221, 100%, 96%);
+  --neutral-light-lavender: hsl(241, 100%, 89%);
+  --neutral-dark-gray-blue: hsl(224, 30%, 27%);
+  --border-radius: calc(25rem / 16);
+  font-family: "Hanken Grotesk", sans-serif;
+  background: var(--neutral-pale-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: white;
+  max-width: calc(600rem / 16);
+  border-radius: var(--border-radius);
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  background: linear-gradient(45deg, var(--gradient-light-royal-blue), var(--gradient-light-slate-blue));
+  border-radius: var(--border-radius);
+  color: white;
+  padding: calc(40rem / 16);
+}
+
+.result .score {
+  background: linear-gradient(to bottom, var(--gradient-violet-blue), var(--gradient-persian-blue));
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(180rem / 16);
+  width: calc(180rem / 16);
+}
+
+.result .title {
+  font-size: calc(20rem / 16);
+  opacity: 0.9;
+}
+
+.result .score {
+  margin: calc(30rem / 16) 0;
+}
+
+.result .score .number {
+  font-weight: 700;
+  font-size: calc(70rem / 16);
+  margin: 0;
+}
+
+.result .score .total {
+  font-size: calc(15rem / 16);
+  font-weight: 500;
+  opacity: 0.6;
+  margin: 0;
+}
+
+.result .greeting {
+  font-size: calc(24rem / 16);
+}
+
+.result .greeting-message {
+  font-size: calc(13rem / 16);
+}
+
+.summary {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: calc(30rem / 16);
+}
+
+.summary .title {
+  font-size: calc(20rem / 16);
+}
+
+.summary .break {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  margin: calc(25rem / 16) 0;
+}
+
+.summary .break .break-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: calc(13rem / 16);
+  font-weight: 800;
+  border-radius: calc(5rem / 16);
+  margin-bottom: calc(15rem / 16);
+}
+
+.summary .break .break-item img {
+  width: calc(17rem / 16);
+}
+
+.break-item .break-item-name {
+  font-size: calc(14rem / 16);
+  flex-grow: 1;
+  margin-left: calc(10rem / 16);
+}
+
+.break-item .break-item-score {
+  font-size: calc(14rem / 16);
+}
+
+.break-item .break-item-total {
+  font-size: calc(14rem / 16);
+  font-weight: 700;
+  opacity: 0.5;
+}
+
+.break-item-reaction {
+  background-color: hsla(0, 100%, 67%, 0.1);
+}
+
+.break-item-reaction .break-item-name {
+  color: var(--primary-red);
+}
+
+.break-item-memory {
+  background-color: hsl(39, 100%, 56%, 0.1);
+}
+
+.break-item-memory .break-item-name {
+  color: var(--primary-orangey-yellow);
+}
+
+.break-item-verbal {
+  background-color: hsl(166, 100%, 37%, 0.1);
+}
+
+.break-item-verbal .break-item-name {
+  color: var(--primary-green-teal);
+}
+
+.break-item-visual {
+  background-color: hsl(234, 85%, 45%, 0.1);
+}
+
+.break-item-visual .break-item-name {
+  color: var(--primary-cobalt-blue);
+}
+
+.summary .button {
+  background: black;
+  border-radius: calc(30rem / 16);
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: calc(15rem / 16);
+  font-weight: 800;
+  padding: calc(15rem / 16);
+  text-align: center;
+}
+
+.summary .button:hover {
+  background: linear-gradient(to top, var(--gradient-light-royal-blue), var(--gradient-light-slate-blue));
+}
+
+@media (min-width: 530px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
