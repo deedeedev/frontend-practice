@@ -1,8 +1,3 @@
-@font-face {
-  font-family: "Hanken Grotesk";
-  src: url("/frontend-mentor/01-results-summary/fonts/HankenGrotesk-VariableFont_wght.ttf");
-}
-
 .main {
   --primary-red: hsl(0, 100%, 67%);
   --primary-orangey-yellow: hsl(39, 100%, 56%);
@@ -17,7 +12,6 @@
   --neutral-light-lavender: hsl(241, 100%, 89%);
   --neutral-dark-gray-blue: hsl(224, 30%, 27%);
   --border-radius: calc(25rem / 16);
-  font-family: "Hanken Grotesk", sans-serif;
   background: var(--neutral-pale-blue);
   display: flex;
   align-items: center;
