@@ -20,7 +20,10 @@ export default function Page() {
           <h1 className={styles.title}>Summary</h1>
           <div className={styles.break}>
             {data.map((item) => (
-              <div className={[styles["break-item"], styles[`break-item-${item.category.toLowerCase()}`]].join(" ")}>
+              <div
+                className={[styles["break-item"], styles[`break-item-${item.category.toLowerCase()}`]].join(" ")}
+                key={item.category}
+              >
                 <img src={item.icon} alt="" />
                 <p className={styles["break-item-name"]}>{item.category}</p>
                 <p className={styles["break-item-score"]}>{item.score}</p>
