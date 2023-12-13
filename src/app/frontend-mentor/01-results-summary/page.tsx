@@ -1,3 +1,4 @@
+import Image from "next/image";
 import styles from "./styles.module.css";
 import data from "./data.json";
 
@@ -24,7 +25,7 @@ export default function Page() {
                 className={[styles["break-item"], styles[`break-item-${item.category.toLowerCase()}`]].join(" ")}
                 key={item.category}
               >
-                <img src={item.icon} alt="" />
+                <Image src={item.icon} alt="" />
                 <p className={styles["break-item-name"]}>{item.category}</p>
                 <p className={styles["break-item-score"]}>{item.score}</p>
                 <p className={styles["break-item-total"]}>&nbsp;&nbsp;/ 100</p>
