@@ -1,0 +1,8 @@
+.main {
+  --neutral-pale-blue: hsl(212, 45%, 89%);
+  background-color: var(--neutral-pale-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
