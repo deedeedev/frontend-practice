@@ -31,8 +31,3 @@ blockquote {
   margin: 0;
   padding: 0;
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(135deg, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
-}
