@@ -10,6 +10,7 @@ export default function Home() {
       <Link href="/frontend-mentor/02-qr-code-component">02 QR Code Component</Link>
       <Link href="/frontend-mentor/03-3-column-preview-card-component">03 3 Column Preview Card</Link>
       <Link href="/frontend-mentor/04-recipe-page">04 Recipe Page</Link>
+      <Link href="/frontend-mentor/05-social-links-profile">05 Social Links Profile</Link>
     </main>
   );
 }

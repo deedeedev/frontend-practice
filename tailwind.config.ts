@@ -9,6 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        // 04 recipe page
         nutmeg: "hsl(14, 45%, 36%)",
         darkRaspberry: "hsl(332, 51%, 32%)",
         roseWhite: "hsl(330, 100%, 98%)",
@@ -16,6 +17,12 @@ const config: Config = {
         lightGray: "hsl(30, 18%, 87%)",
         wengeBrown: "hsl(30, 10%, 34%)",
         darkCharcoal: "hsl(24, 5%, 18%)",
+        // 05 social links profile
+        slpGreen: "hsl(75, 94%, 57%)",
+        slpWhite: "hsl(0, 0%, 100%)",
+        slpGray: "hsl(0, 0%, 20%)",
+        slpDarkGray: "hsl(0, 0%, 12%)",
+        slpOffBlack: "hsl(0, 0%, 8%)",
       },
     },
   },
