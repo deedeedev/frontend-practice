@@ -12,6 +12,7 @@ export default function Home() {
       <Link href="/frontend-mentor/04-recipe-page">04 Recipe Page</Link>
       <Link href="/frontend-mentor/05-social-links-profile">05 Social Links Profile</Link>
       <Link href="/frontend-mentor/06-blog-preview-card">06 Blog Preview Card</Link>
+      <Link href="/frontend-mentor/07-faq-accordion">07 FAQ Accordion</Link>
     </main>
   );
 }
