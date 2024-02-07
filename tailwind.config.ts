@@ -1,4 +1,4 @@
-import type { Config } from "tailwindcss";
+import type { Config } from "tailwindcss"
 
 const config: Config = {
   content: [
@@ -23,13 +23,20 @@ const config: Config = {
         slpGray: "hsl(0, 0%, 20%)",
         slpDarkGray: "hsl(0, 0%, 12%)",
         slpOffBlack: "hsl(0, 0%, 8%)",
+        // 06 blog preview card
         bpcYellow: "hsl(47, 88%, 63%)",
         bpcWhite: "hsl(0, 0%, 100%)",
         bpcGray: "hsl(0, 0%, 50%)",
         bpcBlack: "hsl(0, 0%, 7%)",
+        // 07 faq accordion
+        faqWhite: "hsl(0, 0%, 100%)",
+        faqPurple: "#ad28eb",
+        faqLightPink: "hsl(275, 100%, 97%)",
+        faqGrayishPurple: "hsl(292, 16%, 49%)",
+        faqDarkPurple: "hsl(292, 42%, 14%)",
       },
     },
   },
   plugins: [],
-};
-export default config;
+}
+export default config
