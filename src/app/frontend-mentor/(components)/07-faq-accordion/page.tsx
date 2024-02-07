@@ -9,7 +9,7 @@ export default function Page() {
       style={{
         backgroundImage: `url(${backgroundImage.src})`,
         backgroundRepeat: "no-repeat",
-        backgroundSize: "contain",
+        backgroundSize: "auto",
       }}
     >
       <FAQAccordion />

@@ -48,7 +48,7 @@ export default function FAQAccordion() {
       className={`${workSans.className} container max-w-sm rounded-xl bg-faqWhite p-6 text-faqDarkPurple`}
     >
       {/* Title */}
-      <div className="flex items-center">
+      <div className="flex items-center gap-6">
         <Image
           src={starIcon}
           aria-hidden="true"
