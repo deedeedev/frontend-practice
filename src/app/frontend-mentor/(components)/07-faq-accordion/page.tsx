@@ -4,7 +4,7 @@ import backgroundImage from "./background-pattern-mobile.svg"
 
 export default function Page() {
   return (
-    <main
+    <div
       className="flex min-h-screen w-full items-center justify-center overflow-hidden bg-faqLightPink"
       style={{
         backgroundImage: `url(${backgroundImage.src})`,
@@ -13,6 +13,6 @@ export default function Page() {
       }}
     >
       <FAQAccordion />
-    </main>
+    </div>
   )
 }
