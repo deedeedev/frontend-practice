@@ -35,6 +35,12 @@ const config: Config = {
         faqGrayishPurple: "hsl(292, 16%, 49%)",
         faqDarkPurple: "hsl(292, 42%, 14%)",
       },
+      backgroundImage: {
+        "img-faq-accordion-desktop":
+          "url('/07-faq-accordion/background-pattern-desktop.svg')",
+        "img-faq-accordion-mobile":
+          "url('/07-faq-accordion/background-pattern-mobile.svg')",
+      },
     },
   },
   plugins: [],

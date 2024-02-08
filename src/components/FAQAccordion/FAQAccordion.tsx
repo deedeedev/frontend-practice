@@ -13,34 +13,27 @@ const workSans = Work_Sans({
   subsets: ["latin"],
 })
 
-const questions = [
-  {
-    question: "What is Frontend Mentor, and how will it help me?",
-    answer:
-      "Frontend Mentor offers realistic coding challenges to help developers improve their frontend coding skills with projects in HTML, CSS and JavaScript. It's suitable for all levels and ideal for portfolio building.",
-  },
-  {
-    question: "Is Frontend Mentor free?",
-    answer:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, ex aliquam. Ea, sequi quis molestiae, rerum suscipit cumque minima ullam voluptates consectetur distinctio, optio eveniet sed perspiciatis adipisci explicabo labore.",
-  },
-  {
-    question: "Can I use Frontend Mentor projects in my portfolio?",
-    answer:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur obcaecati maiores veritatis natus! Consequatur architecto in reiciendis, corrupti, ratione nisi voluptate debitis quos odit qui natus sed ab aliquam repellat.",
-  },
-  {
-    question: "How can I get help if I'm stuck on a challenge?",
-    answer:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis doloremque explicabo reiciendis exercitationem temporibus. Tempore voluptates exercitationem porro, fuga ex amet tempora quae, consequuntur commodi vitae deleniti earum magnam praesentium!",
-  },
-]
+interface FAQAccordionProps {
+  questions: {
+    question: string
+    answer: string
+  }[]
+}
 
-export default function FAQAccordion() {
+export default function FAQAccordion({ questions }: FAQAccordionProps) {
   const [activeIndex, setActiveIndex] = useState<number | null>(null)
+  const [answerHeights, setAnswerHeights] = useState<number[]>(
+    Array(questions.length).fill(0),
+  )
 
-  const toggleQuestion = (index: number) => {
-    setActiveIndex(activeIndex === index ? null : index)
+  const toggleQuestion = (idx: number) => {
+    setActiveIndex(activeIndex === idx ? null : idx)
+    const newAnswerHeights = Array(questions.length).fill(0)
+    if (activeIndex !== idx)
+      newAnswerHeights[idx] = document.getElementById(
+        `answer-${idx}`,
+      )?.scrollHeight
+    setAnswerHeights(newAnswerHeights)
   }
 
   return (
@@ -58,15 +51,15 @@ export default function FAQAccordion() {
         <h1 className="text-3xl font-bold">FAQs</h1>
       </div>
       {/* Questions */}
-      <div className="flex flex-col space-y-6 divide-y">
+      <div className="flex flex-col divide-y">
         {questions.map(({ question, answer }, idx) => (
-          <div key={idx}>
+          <div key={idx} className="py-6">
             <div
-              className="mt-6 flex items-center justify-between hover:cursor-pointer"
+              className="flex items-center justify-between hover:cursor-pointer"
               onClick={() => toggleQuestion(idx)}
             >
               {/* Title */}
-              <h2 className="hover:text-faqPurple text-lg font-bold leading-6 text-faqDarkPurple">
+              <h2 className="text-lg font-bold leading-6 text-faqDarkPurple hover:text-faqPurple">
                 {question}
               </h2>
               {/* Toggle Button */}
@@ -76,11 +69,13 @@ export default function FAQAccordion() {
               />
             </div>
             {/* Answer */}
-            <p
-              className={`mt-6 text-faqGrayishPurple transition-all duration-300 ${activeIndex === idx ? "block" : "hidden"}`}
+            <div
+              id={`answer-${idx}`}
+              className="overflow-hidden transition-all duration-300"
+              style={{ maxHeight: `${answerHeights[idx] || 0}px` }}
             >
-              {answer}
-            </p>
+              <p className="pt-6 text-faqGrayishPurple">{answer}</p>
+            </div>
           </div>
         ))}
       </div>
