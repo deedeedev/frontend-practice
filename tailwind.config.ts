@@ -34,6 +34,12 @@ const config: Config = {
         faqLightPink: "hsl(275, 100%, 97%)",
         faqGrayishPurple: "hsl(292, 16%, 49%)",
         faqDarkPurple: "hsl(292, 42%, 14%)",
+        // 08 product preview card
+        ppcDarkCyan: "hsl(158, 36%, 37%)",
+        ppcCream: "hsl(30, 38%, 92%)",
+        ppcVeryDarkBlue: "hsl(212, 21%, 14%)",
+        ppcDarkGrayishBlue: "hsl(228, 12%, 48%)",
+        ppcWhite: "hsl(0, 0%, 100%)",
       },
       backgroundImage: {
         "img-faq-accordion-desktop":
