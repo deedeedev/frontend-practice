@@ -36,6 +36,7 @@ const config: Config = {
         faqDarkPurple: "hsl(292, 42%, 14%)",
         // 08 product preview card
         ppcDarkCyan: "hsl(158, 36%, 37%)",
+        ppcVeryDarkCyan: "hsl(156, 42%, 18%)",
         ppcCream: "hsl(30, 38%, 92%)",
         ppcVeryDarkBlue: "hsl(212, 21%, 14%)",
         ppcDarkGrayishBlue: "hsl(228, 12%, 48%)",
