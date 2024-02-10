@@ -23,7 +23,7 @@ export default function ProductPreviewCard() {
         />
       </picture>
       <div className="m-6 space-y-4">
-        <h2 className="-mb-2 text-xs uppercase tracking-[.5em]">Perfume</h2>
+        <p className="-mb-2 text-xs uppercase tracking-[.5em]">Perfume</p>
         <h1 className={`${fraunces.className} text-ppcVeryDarkBlue text-3xl`}>
           Gabrielle Essence Eau De Parfum
         </h1>
