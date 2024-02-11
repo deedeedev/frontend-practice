@@ -29,6 +29,9 @@ export default function Home() {
       <Link href="/frontend-mentor/09-interactive-rating-component">
         09 Interactive Rating Component
       </Link>
+      <Link href="/frontend-mentor/10-nft-preview-card">
+        10 NFT Preview Card
+      </Link>
     </main>
   )
 }

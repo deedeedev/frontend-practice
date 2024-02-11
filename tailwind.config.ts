@@ -48,6 +48,12 @@ const config: Config = {
         ircDarkerBlue: "hsl(215, 21%, 16%)",
         ircVeryDarkBlue: "hsl(216, 12%, 8%)",
         ircOrange: "hsl(25, 97%, 53%)",
+        // 10 nft preview card
+        npcSoftBlue: "hsl(215, 51%, 70%)",
+        npcCyan: "hsl(178, 100%, 50%)",
+        npcVeryDarkBlueMain: "hsl(217, 54%, 11%)",
+        npcVeryDarkBlueCard: "hsl(216, 50%, 16%)",
+        npcVeryDarkBlueLine: "hsl(215, 32%, 27%)",
       },
       backgroundImage: {
         "img-faq-accordion-desktop":
