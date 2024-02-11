@@ -29,7 +29,7 @@ export default function InteractiveRatingComponent() {
           <h1 className="text-2xl font-bold text-white">Thank you!</h1>
           <p className="text-ircLighterGray text-center">
             We appreciate you taking the time to give a rating. If you ever need
-            more support, don't hesitate to get in touch!
+            more support, don&apos;t hesitate to get in touch!
           </p>
         </div>
       ) : (
