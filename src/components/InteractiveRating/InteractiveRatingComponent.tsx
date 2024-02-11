@@ -10,7 +10,7 @@ import thankYouImage from "./illustration-thank-you.svg"
 
 const overpass = Overpass({ subsets: ["latin"], weight: ["400", "700"] })
 
-export default function InteractiveRatingComponent() {
+export default function InteractiveRating() {
   const [rating, setRating] = useState<number | null>(null)
   const [submitted, setSubmitted] = useState<boolean>(false)
 
