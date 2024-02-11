@@ -42,10 +42,12 @@ const config: Config = {
         ppcDarkGrayishBlue: "hsl(228, 12%, 48%)",
         ppcWhite: "hsl(0, 0%, 100%)",
         // 09 interactive rating component
-        ircLightGrey: "hsl(217, 12%, 63%)",
-        ircMediumGrey: "hsl(216, 12%, 54%)",
+        ircLightGray: "hsl(217, 12%, 63%)",
+        ircMediumGray: "hsl(216, 12%, 54%)",
         ircDarkBlue: "hsl(213, 19%, 18%)",
+        ircDarkerBlue: "hsl(215, 21%, 16%)",
         ircVeryDarkBlue: "hsl(216, 12%, 8%)",
+        ircOrange: "hsl(25, 97%, 53%)",
       },
       backgroundImage: {
         "img-faq-accordion-desktop":
