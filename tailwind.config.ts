@@ -54,6 +54,11 @@ const config: Config = {
         npcVeryDarkBlueMain: "hsl(217, 54%, 11%)",
         npcVeryDarkBlueCard: "hsl(216, 50%, 16%)",
         npcVeryDarkBlueLine: "hsl(215, 32%, 27%)",
+        // 11 profile card
+        pcDarkCyan: "hsl(185, 75%, 39%)",
+        pcVeryDarkDesaturatedBlue: "hsl(229, 23%, 23%)",
+        pcDarkGrayishBlue: "hsl(227, 10%, 46%)",
+        pcDarkGray: "hsl(0, 0%, 59%)",
       },
       backgroundImage: {
         "img-faq-accordion-desktop":
