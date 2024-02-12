@@ -61,6 +61,7 @@ const config: Config = {
         pcDarkGray: "hsl(0, 0%, 59%)",
       },
       backgroundImage: {
+        // 07 faq accordion
         "img-faq-accordion-desktop":
           "url('/07-faq-accordion/background-pattern-desktop.svg')",
         "img-faq-accordion-mobile":
