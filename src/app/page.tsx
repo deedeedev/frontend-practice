@@ -33,6 +33,9 @@ export default function Home() {
         10 NFT Preview Card
       </Link>
       <Link href="/frontend-mentor/11-profile-card">11 Profile Card</Link>
+      <Link href="/frontend-mentor/12-social-proof-section">
+        12 Social Proof Section
+      </Link>
     </main>
   )
 }

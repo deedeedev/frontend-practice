@@ -59,6 +59,11 @@ const config: Config = {
         pcVeryDarkDesaturatedBlue: "hsl(229, 23%, 23%)",
         pcDarkGrayishBlue: "hsl(227, 10%, 46%)",
         pcDarkGray: "hsl(0, 0%, 59%)",
+        // 12 social proof section
+        spsVeryDarkMagenta: "hsl(300, 43%, 22%)",
+        spsSoftPink: "hsl(333, 80%, 67%)",
+        spsDarkGrayishMagenta: "hsl(303, 10%, 53%)",
+        spsLightGrayishMagenta: "hsl(300, 24%, 96%)",
       },
       backgroundImage: {
         // 07 faq accordion
