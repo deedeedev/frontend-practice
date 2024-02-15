@@ -64,6 +64,14 @@ const config: Config = {
         spsSoftPink: "hsl(333, 80%, 67%)",
         spsDarkGrayishMagenta: "hsl(303, 10%, 53%)",
         spsLightGrayishMagenta: "hsl(300, 24%, 96%)",
+        // 13 social card feature section
+        scfsRed: "hsl(0, 78%, 62%)",
+        scfsCyan: "hsl(180, 62%, 55%)",
+        scfsOrange: "hsl(34, 97%, 64%)",
+        scfsBlue: "hsl(212, 86%, 64%)",
+        scfsVeryDarkBlue: "hsl(234, 12%, 34%)",
+        scfsGrayishBlue: "hsl(229, 6%, 66%)",
+        scfsVeryLightGray: "hsl(0, 0%, 98%)",
       },
       backgroundImage: {
         // 07 faq accordion
