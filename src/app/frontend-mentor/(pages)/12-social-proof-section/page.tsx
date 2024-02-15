@@ -74,8 +74,9 @@ export default function Page() {
                 "lg:mr-[40px]": i === 1,
                 "lg:mr-0": i === 2,
               })}
+              key={i}
             >
-              <SocialProofReviewSummary {...review} key={i} />
+              <SocialProofReviewSummary {...review} />
             </div>
           ))}
         </div>
@@ -88,8 +89,9 @@ export default function Page() {
                 "lg:mt-[20px]": i === 1,
                 "lg:mt-[40px]": i === 2,
               })}
+              key={i}
             >
-              <SocialProofCard {...card} key={i} />
+              <SocialProofCard {...card} />
             </div>
           ))}
         </div>
