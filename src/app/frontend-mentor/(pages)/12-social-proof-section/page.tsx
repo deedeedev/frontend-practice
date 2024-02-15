@@ -2,10 +2,11 @@ import SocialProofCard from "@/components/SocialProofCard/SocialProofCard"
 import SocialProofReviewSummary from "@/components/SocialProofReviewSummary/SocialProofReviewSummary"
 import { League_Spartan } from "next/font/google"
 
+import clsx from "clsx"
+
 import avatarAnne from "./image-anne.jpg"
 import avatarColton from "./image-colton.jpg"
 import avatarIrene from "./image-irene.jpg"
-import clsx from "clsx"
 
 const leagueSpartan = League_Spartan({
   subsets: ["latin"],
@@ -51,7 +52,7 @@ const cards = [
 export default function Page() {
   return (
     <div
-      className={`${leagueSpartan.className} flex min-h-screen w-full items-center justify-center overflow-hidden bg-white px-6 py-20 text-spsVeryDarkMagenta/70`}
+      className={`${leagueSpartan.className} bg-social-proof-section-mobile md:bg-social-proof-section-desktop bg-position-social-proof-section flex min-h-screen w-full items-center justify-center overflow-hidden bg-white bg-no-repeat px-6 py-20 text-spsVeryDarkMagenta/70`}
     >
       <div className="flex max-w-5xl flex-col items-center justify-center gap-10 md:grid md:grid-cols-2 md:gap-20">
         {/* Intro */}

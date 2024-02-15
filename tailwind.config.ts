@@ -71,6 +71,14 @@ const config: Config = {
           "url('/07-faq-accordion/background-pattern-desktop.svg')",
         "img-faq-accordion-mobile":
           "url('/07-faq-accordion/background-pattern-mobile.svg')",
+        // 12 social proof section:
+        "social-proof-section-desktop":
+          "url('/12-social-proof-section/bg-pattern-top-desktop.svg'), url('/12-social-proof-section/bg-pattern-bottom-desktop.svg')",
+        "social-proof-section-mobile":
+          "url('/12-social-proof-section/bg-pattern-top-mobile.svg'), url('/12-social-proof-section/bg-pattern-bottom-mobile.svg')",
+      },
+      backgroundPosition: {
+        "position-social-proof-section": "left top, right bottom",
       },
     },
   },
