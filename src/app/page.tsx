@@ -36,8 +36,8 @@ export default function Home() {
       <Link href="/frontend-mentor/12-social-proof-section">
         12 Social Proof Section
       </Link>
-      <Link href="/frontend-mentor/13-social-card-feature-section">
-        12 Social Card Feature Section
+      <Link href="/frontend-mentor/13-four-card-feature-section">
+        13 Four Card Feature Section
       </Link>
     </main>
   )
