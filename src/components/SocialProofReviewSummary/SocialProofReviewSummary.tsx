@@ -15,7 +15,7 @@ export default function SocialProofReviewSummary({
   source,
 }: SocialProofReviewSummaryProps) {
   return (
-    <div className="mx-auto flex max-w-sm flex-col items-center gap-2 rounded-lg bg-spsDarkGrayishMagenta/10 p-3 text-spsVeryDarkMagenta md:mr-0 lg:w-auto lg:max-w-md lg:flex-row lg:justify-center lg:gap-8 lg:px-12">
+    <div className="mx-auto flex max-w-sm flex-col items-center gap-2 rounded-lg bg-spsLightGrayishMagenta p-3 text-spsVeryDarkMagenta md:mr-0 lg:w-auto lg:max-w-md lg:flex-row lg:justify-center lg:gap-8 lg:px-12">
       <div className="flex gap-2">
         {Array(stars)
           .fill(null)

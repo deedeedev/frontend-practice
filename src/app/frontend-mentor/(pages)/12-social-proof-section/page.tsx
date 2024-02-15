@@ -51,12 +51,12 @@ const cards = [
 export default function Page() {
   return (
     <div
-      className={`${leagueSpartan.className} flex min-h-screen w-full items-center justify-center overflow-hidden bg-spsLightGrayishMagenta px-6 py-20 text-spsVeryDarkMagenta/70`}
+      className={`${leagueSpartan.className} flex min-h-screen w-full items-center justify-center overflow-hidden bg-white px-6 py-20 text-spsVeryDarkMagenta/70`}
     >
       <div className="flex max-w-5xl flex-col items-center justify-center gap-10 md:grid md:grid-cols-2 md:gap-20">
         {/* Intro */}
         <div className="mx-auto flex w-full max-w-md flex-col space-y-6 text-center md:ml-0 md:text-left">
-          <h1 className="mx-auto max-w-xs text-[40px] font-extrabold leading-8 text-spsVeryDarkMagenta md:ml-0">
+          <h1 className="mx-auto max-w-xs text-[50px] font-extrabold leading-10 text-spsVeryDarkMagenta md:ml-0">
             10,000+ of our users love our products.
           </h1>
           <p className="px-12 text-[18px] leading-6 md:px-0">
@@ -70,8 +70,8 @@ export default function Page() {
           {reviews.map((review, i) => (
             <div
               className={clsx("w-full", {
-                "lg:mr-[80px]": i === 0,
-                "lg:mr-[40px]": i === 1,
+                "lg:mr-[60px]": i === 0,
+                "lg:mr-[30px]": i === 1,
                 "lg:mr-0": i === 2,
               })}
               key={i}
