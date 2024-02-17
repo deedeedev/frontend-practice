@@ -1,4 +1,3 @@
-import { StaticImport } from "next/dist/shared/lib/get-img-props"
 import Image from "next/image"
 
 interface FeatureCardProps {
@@ -22,7 +21,7 @@ export default function FeatureCard({
       <h1 className="text-scfsVeryDarkBlue text-xl font-bold">{title}</h1>
       <p className="text-[13px]">{text}</p>
       <div className="mt-auto self-end">
-        <Image src={icon} width={65} height={65} alt="title" />
+        <Image src={icon} width={65} height={65} alt={title} aria-hidden />
       </div>
     </div>
   )

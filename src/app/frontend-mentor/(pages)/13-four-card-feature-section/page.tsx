@@ -1,4 +1,3 @@
-import Image from "next/image"
 import { Poppins } from "next/font/google"
 import FeatureCard from "@/components/FeatureCard/FeatureCard"
 import clsx from "clsx"
