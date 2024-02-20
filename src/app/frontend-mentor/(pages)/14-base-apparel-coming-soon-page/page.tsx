@@ -36,7 +36,7 @@ export default function Page() {
             <div className="font-bold text-bacspDarkGrayishRed">soon</div>
           </div>
           <p className="container text-center text-[14px] text-bacspDesaturatedRed lg:text-left">
-            Hello fellow shoppers! We're currently building our new fasion
+            Hello fellow shoppers! We&apos;re currently building our new fasion
             store. Add your email below to stay up-to-date with announcements
             and our launch deals.
           </p>
