@@ -42,6 +42,9 @@ export default function Home() {
       <Link href="/frontend-mentor/14-base-apparel-coming-soon-page">
         14 Base Apparel Coming Soon Page
       </Link>
+      <Link href="/frontend-mentor/15-intro-component-with-signup-form">
+        15 Intro Component With Signup Form
+      </Link>
     </main>
   )
 }

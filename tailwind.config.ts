@@ -80,6 +80,12 @@ const config: Config = {
         bacspGradient1To: "hsl(0, 100%, 98%)",
         bacspGradient2From: "hsl(0, 80%, 86%)",
         bacspGradient2To: "hsl(0, 74%, 74%)",
+        // 15 intro component with signup form
+        icwsufRed: "hsl(0, 100%, 74%)",
+        icwsufGreen: "hsl(154, 59%, 51%)",
+        icwsufBlue: "hsl(248, 32%, 49%)",
+        icwsufDarkBlue: "hsl(249, 10%, 26%)",
+        icwsufGrayishBlue: "hsl(246, 25%, 77%)",
       },
       backgroundImage: {
         // 07 faq accordion
@@ -92,6 +98,11 @@ const config: Config = {
           "url('/12-social-proof-section/bg-pattern-top-desktop.svg'), url('/12-social-proof-section/bg-pattern-bottom-desktop.svg')",
         "social-proof-section-mobile":
           "url('/12-social-proof-section/bg-pattern-top-mobile.svg'), url('/12-social-proof-section/bg-pattern-bottom-mobile.svg')",
+        // 15 intro component with signup form
+        icwsfMobile:
+          "url('/15-intro-component-with-signup-form/bg-intro-mobile.png')",
+        icwsfDesktop:
+          "url('/15-intro-component-with-signup-form/bg-intro-desktop.png')",
       },
       backgroundPosition: {
         "position-social-proof-section": "left top, right bottom",
