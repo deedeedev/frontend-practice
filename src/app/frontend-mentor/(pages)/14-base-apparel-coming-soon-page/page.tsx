@@ -17,10 +17,10 @@ export default function Page() {
       className={`${josefinSans.className} flex min-h-dvh w-full items-start justify-center bg-contain bg-no-repeat md:bg-[url('/14-base-apparel-coming-soon-page/bg-pattern-desktop.svg')]`}
     >
       {/* Container: Text + Form */}
-      <div className="mx-auto flex max-w-sm flex-col lg:px-10 xl:px-0">
+      <div className="mx-auto flex max-w-sm flex-col lg:max-w-[26rem] lg:px-10 xl:px-0">
         {/* Logo */}
-        <div className="p-8 lg:px-0 lg:py-16">
-          <Image src={logoImg} alt="logo" className="w-[100px] lg:w-[150px]" />
+        <div className="p-8 lg:px-0 lg:py-24">
+          <Image src={logoImg} alt="logo" className="w-[100px] lg:w-[180px]" />
         </div>
         {/* Image */}
         <div className="lg:hidden">
@@ -35,7 +35,7 @@ export default function Page() {
             <div className="font-bold text-bacspDarkGrayishRed">coming</div>
             <div className="font-bold text-bacspDarkGrayishRed">soon</div>
           </div>
-          <p className="container text-center text-[14px] text-bacspDesaturatedRed lg:text-left">
+          <p className="container max-w-sm text-center text-[14px] text-bacspDesaturatedRed lg:text-left lg:text-[16px]">
             Hello fellow shoppers! We&apos;re currently building our new fasion
             store. Add your email below to stay up-to-date with announcements
             and our launch deals.
