@@ -1,6 +1,6 @@
 import { Poppins } from "next/font/google"
 import FeatureCard from "@/components/FeatureCard/FeatureCard"
-import clsx from "clsx"
+import { cn } from "@/lib/utils"
 
 const poppins = Poppins({ subsets: ["latin"], weight: ["200", "400", "600"] })
 
@@ -34,16 +34,16 @@ const features = [
 export default function Page() {
   return (
     <section
-      className={`${poppins.className} bg-scfsVeryLightGray text-scfsGrayishBlue flex min-h-screen w-full items-center justify-center overflow-hidden px-8 py-20 text-[15px]`}
+      className={`${poppins.className} flex min-h-screen w-full items-center justify-center overflow-hidden bg-scfsVeryLightGray px-8 py-20 text-[15px] text-scfsGrayishBlue`}
     >
       {/* Content */}
       <div className="flex flex-col gap-16">
         {/* Intro */}
         <div className="mx-auto max-w-[315px] text-center md:max-w-lg">
-          <p className="text-scfsVeryDarkBlue text-2xl font-light md:text-4xl">
+          <p className="text-2xl font-light text-scfsVeryDarkBlue md:text-4xl">
             Reliable, efficient delivery
           </p>
-          <h1 className="text-scfsVeryDarkBlue mb-5 mt-2 text-2xl font-bold md:text-4xl">
+          <h1 className="mb-5 mt-2 text-2xl font-bold text-scfsVeryDarkBlue md:text-4xl">
             Powered by Technology
           </h1>
           <p className="text-[16px]">
@@ -56,7 +56,7 @@ export default function Page() {
           {features.map((feature, i) => (
             <div
               key={i}
-              className={clsx({
+              className={cn({
                 "md:row-span-full": i === 0 || i === 3,
                 "md:col-start-3": i === 3,
               })}

@@ -2,7 +2,7 @@ import SocialProofCard from "@/components/SocialProofCard/SocialProofCard"
 import SocialProofReviewSummary from "@/components/SocialProofReviewSummary/SocialProofReviewSummary"
 import { League_Spartan } from "next/font/google"
 
-import clsx from "clsx"
+import { cn } from "@/lib/utils"
 
 import avatarAnne from "./image-anne.jpg"
 import avatarColton from "./image-colton.jpg"
@@ -52,7 +52,7 @@ const cards = [
 export default function Page() {
   return (
     <div
-      className={`${leagueSpartan.className} bg-social-proof-section-mobile md:bg-social-proof-section-desktop bg-position-social-proof-section flex min-h-screen w-full items-center justify-center overflow-hidden bg-white bg-no-repeat px-6 py-20 text-spsVeryDarkMagenta/70`}
+      className={`${leagueSpartan.className} flex min-h-screen w-full items-center justify-center overflow-hidden bg-white bg-social-proof-section-mobile bg-position-social-proof-section bg-no-repeat px-6 py-20 text-spsVeryDarkMagenta/70 md:bg-social-proof-section-desktop`}
     >
       <div className="flex max-w-5xl flex-col items-center justify-center gap-10 md:grid md:grid-cols-2 md:gap-20">
         {/* Intro */}
@@ -70,7 +70,7 @@ export default function Page() {
         <div className="flex w-full flex-col items-center gap-4 md:items-end">
           {reviews.map((review, i) => (
             <div
-              className={clsx("w-full", {
+              className={cn("w-full", {
                 "lg:mr-[60px]": i === 0,
                 "lg:mr-[30px]": i === 1,
                 "lg:mr-0": i === 2,
@@ -85,7 +85,7 @@ export default function Page() {
         <div className="flex flex-col gap-4 md:col-span-2 md:flex-row md:justify-center">
           {cards.map((card, i) => (
             <div
-              className={clsx({
+              className={cn({
                 "lg:mt-0": i === 0,
                 "lg:mt-[20px]": i === 1,
                 "lg:mt-[40px]": i === 2,

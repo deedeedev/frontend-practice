@@ -4,7 +4,7 @@ import { useState } from "react"
 import Image from "next/image"
 import { Overpass } from "next/font/google"
 
-import clsx from "clsx"
+import { cn } from "@/lib/utils"
 import starIcon from "./icon-star.svg"
 import thankYouImage from "./illustration-thank-you.svg"
 
@@ -18,12 +18,12 @@ export default function InteractiveRating() {
     <>
       {submitted ? (
         <div
-          className={clsx(
-            `${overpass.className} bg-ircDarkerBlue text-ircLightGray container mx-4 flex h-[22.5rem] max-w-sm flex-col items-center justify-center gap-5 rounded-2xl px-6 py-8 text-[0.9rem]`,
+          className={cn(
+            `${overpass.className} container mx-4 flex h-[22.5rem] max-w-sm flex-col items-center justify-center gap-5 rounded-2xl bg-ircDarkerBlue px-6 py-8 text-[0.9rem] text-ircLightGray`,
           )}
         >
           <Image src={thankYouImage} alt="thank you" aria-hidden />
-          <div className="bg-ircDarkBlue text-ircOrange rounded-full px-4 py-1">
+          <div className="rounded-full bg-ircDarkBlue px-4 py-1 text-ircOrange">
             You selected {rating} out of 5
           </div>
           <h1 className="text-2xl font-bold text-white">Thank you!</h1>
@@ -34,11 +34,11 @@ export default function InteractiveRating() {
         </div>
       ) : (
         <div
-          className={clsx(
-            `${overpass.className} bg-ircDarkerBlue text-ircLightGray container mx-4 flex h-[22.5rem] max-w-sm flex-col gap-5 rounded-2xl p-6 text-[0.9rem]`,
+          className={cn(
+            `${overpass.className} container mx-4 flex h-[22.5rem] max-w-sm flex-col gap-5 rounded-2xl bg-ircDarkerBlue p-6 text-[0.9rem] text-ircLightGray`,
           )}
         >
-          <div className="bg-ircDarkBlue flex h-11 w-11 items-center justify-center self-start rounded-full">
+          <div className="flex h-11 w-11 items-center justify-center self-start rounded-full bg-ircDarkBlue">
             <Image src={starIcon} alt="star icon" aria-hidden />
           </div>
           <h1 className="text-2xl font-semibold text-white">How did we do?</h1>
@@ -49,10 +49,10 @@ export default function InteractiveRating() {
           <div className="flex items-center justify-between">
             {Array.from({ length: 5 }, (_, i) => i + 1).map((n) => (
               <div
-                className={clsx(
-                  "bg-ircDarkBlue hover:bg-ircLightGray flex h-11 w-11 cursor-pointer items-center justify-center rounded-full hover:font-bold hover:text-white",
+                className={cn(
+                  "flex h-11 w-11 cursor-pointer items-center justify-center rounded-full bg-ircDarkBlue hover:bg-ircLightGray hover:font-bold hover:text-white",
                   {
-                    "bg-ircOrange hover:bg-ircOrange text-white hover:text-white":
+                    "bg-ircOrange text-white hover:bg-ircOrange hover:text-white":
                       rating === n,
                   },
                 )}
@@ -64,7 +64,7 @@ export default function InteractiveRating() {
             ))}
           </div>
           <button
-            className="bg-ircOrange hover:text-ircOrange rounded-full p-3 uppercase tracking-widest text-white hover:bg-white"
+            className="rounded-full bg-ircOrange p-3 uppercase tracking-widest text-white hover:bg-white hover:text-ircOrange"
             onClick={() => (rating ? setSubmitted(true) : null)}
           >
             submit

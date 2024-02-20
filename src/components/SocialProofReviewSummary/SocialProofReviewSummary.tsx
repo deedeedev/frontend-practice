@@ -1,7 +1,6 @@
 import Image from "next/image"
 
 import starIcon from "./icon-star.svg"
-import clsx from "clsx"
 
 // background: dark grayish magenta
 
