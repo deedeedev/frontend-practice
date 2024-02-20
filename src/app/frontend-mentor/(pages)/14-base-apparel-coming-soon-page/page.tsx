@@ -14,10 +14,10 @@ const josefinSans = Josefin_Sans({
 export default function Page() {
   return (
     <div
-      className={`${josefinSans.className} min-h-dvh flex w-full items-start justify-center md:bg-[url('/14-base-apparel-coming-soon-page/bg-pattern-desktop.svg')]`}
+      className={`${josefinSans.className} flex min-h-dvh w-full items-start justify-center bg-contain bg-no-repeat md:bg-[url('/14-base-apparel-coming-soon-page/bg-pattern-desktop.svg')]`}
     >
       {/* Container: Text + Form */}
-      <div className="mx-auto flex max-w-sm flex-col">
+      <div className="mx-auto flex max-w-sm flex-col lg:px-10 xl:px-0">
         {/* Logo */}
         <div className="p-8 lg:px-0 lg:py-16">
           <Image src={logoImg} alt="logo" className="w-[100px] lg:w-[150px]" />
@@ -47,7 +47,12 @@ export default function Page() {
         </div>
       </div>
       <div className="hidden lg:block">
-        <Image src={desktopHeroImg} placeholder="blur" alt="model" />
+        <Image
+          src={desktopHeroImg}
+          placeholder="blur"
+          alt="model"
+          className="min-h-dvh w-auto"
+        />
       </div>
     </div>
   )

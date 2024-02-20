@@ -21,7 +21,7 @@ export default function BACSPForm() {
         <input
           type="text"
           name="email"
-          className="min-w-[20rem] rounded-full border border-bacspDesaturatedRed px-5 py-3 text-sm placeholder:text-bacspDesaturatedRed focus:outline-none lg:min-w-[24rem]"
+          className="min-w-[20rem] rounded-full border border-bacspDesaturatedRed px-5 py-3 text-sm placeholder:text-bacspDesaturatedRed focus:outline-none xl:min-w-[24rem]"
           placeholder="Email Address"
         />
         <div
@@ -34,7 +34,7 @@ export default function BACSPForm() {
         </div>
         <button
           type="submit"
-          className="from-bacspGradient2From to-bacspGradient2To absolute right-0 top-0 flex h-full w-16 items-center justify-center rounded-full bg-gradient-to-br shadow-lg shadow-bacspDesaturatedRed hover:brightness-125 lg:w-20"
+          className="absolute right-0 top-0 flex h-full w-16 items-center justify-center rounded-full bg-gradient-to-br from-bacspGradient2From to-bacspGradient2To shadow-lg shadow-bacspDesaturatedRed hover:brightness-125 lg:w-20"
         >
           <Image src={arrowIcon} alt="submit" />
         </button>
