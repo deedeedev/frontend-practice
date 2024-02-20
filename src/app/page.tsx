@@ -39,6 +39,9 @@ export default function Home() {
       <Link href="/frontend-mentor/13-four-card-feature-section">
         13 Four Card Feature Section
       </Link>
+      <Link href="/frontend-mentor/14-base-apparel-coming-soon-page">
+        14 Base Apparel Coming Soon Page
+      </Link>
     </main>
   )
 }

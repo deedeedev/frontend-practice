@@ -72,6 +72,14 @@ const config: Config = {
         scfsVeryDarkBlue: "hsl(234, 12%, 34%)",
         scfsGrayishBlue: "hsl(229, 6%, 66%)",
         scfsVeryLightGray: "hsl(0, 0%, 98%)",
+        // 14 base apparel coming soon page
+        bacspDesaturatedRed: "hsl(0, 36%, 70%)",
+        bacspSoftRed: "hsl(0, 93%, 68%)",
+        bacspDarkGrayishRed: "hsl(0, 6%, 24%)",
+        bacspGradient1From: "hsl(0, 100%, 100%)",
+        bacspGradient1To: "hsl(0, 100%, 98%)",
+        bacspGradient2From: "hsl(0, 80%, 86%)",
+        bacspGradient2To: "hsl(0, 74%, 74%)",
       },
       backgroundImage: {
         // 07 faq accordion
