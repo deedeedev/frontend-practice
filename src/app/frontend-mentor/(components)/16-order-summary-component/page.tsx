@@ -9,15 +9,8 @@ const redHatDisplay = Red_Hat_Display({
 export default function Page() {
   return (
     <div
-      className={`${redHatDisplay.className} bg-oscPaleBlue relative flex min-h-dvh w-full items-center justify-center`}
+      className={`${redHatDisplay.className} bg-oscPaleBlue text-oscDesaturatedBlue flex min-h-dvh w-full items-center justify-center text-[16px]`}
     >
-      <div className="absolute inset-x-0 top-0 bg-white text-black">
-        <div className="bg-oscPaleBlue">Pale Blue</div>
-        <div className="bg-oscBrightBlue">Bright Blue</div>
-        <div className="bg-oscVeryPaleBlue">Very Pale Blue</div>
-        <div className="bg-oscDesaturatedBlue">Desaturated Blue</div>
-        <div className="bg-oscDarkBlue">Dark Blue</div>
-      </div>
       <OrderSummaryCard />
     </div>
   )
