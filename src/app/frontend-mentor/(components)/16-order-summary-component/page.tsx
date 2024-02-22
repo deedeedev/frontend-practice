@@ -9,7 +9,8 @@ const redHatDisplay = Red_Hat_Display({
 export default function Page() {
   return (
     <div
-      className={`${redHatDisplay.className} bg-oscPaleBlue text-oscDesaturatedBlue flex min-h-dvh w-full items-center justify-center text-[16px]`}
+      className={`${redHatDisplay.className} bg-oscMobile flex min-h-dvh w-full items-center justify-center bg-oscPaleBlue bg-contain bg-no-repeat text-[16px] text-oscDesaturatedBlue`}
+      style={{ backgroundPosition: "0px -200px" }}
     >
       <OrderSummaryCard />
     </div>

@@ -110,6 +110,11 @@ const config: Config = {
           "url('/15-intro-component-with-signup-form/bg-intro-mobile.png')",
         icwsfDesktop:
           "url('/15-intro-component-with-signup-form/bg-intro-desktop.png')",
+        // 16 order summary component
+        oscMobile:
+          "url('/16-order-summary-component/pattern-background-mobile.svg')",
+        oscDesktop:
+          "url('/16-order-summary-component/pattern-background-desktop.svg')",
       },
       backgroundPosition: {
         "position-social-proof-section": "left top, right bottom",
