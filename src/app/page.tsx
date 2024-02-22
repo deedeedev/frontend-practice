@@ -48,6 +48,9 @@ export default function Home() {
       <Link href="/frontend-mentor/16-order-summary-component">
         16 Order Summary Component
       </Link>
+      <Link href="/frontend-mentor/17-stats-preview-card-component">
+        17 Stats Preview Card Component
+      </Link>
     </main>
   )
 }

@@ -93,6 +93,12 @@ const config: Config = {
         oscVeryPaleBlue: "hsl(225, 100%, 98%)",
         oscDesaturatedBlue: "hsl(224, 23%, 55%)",
         oscDarkBlue: "hsl(223, 47%, 23%)",
+        // 17 stats preview card component
+        spccVeryDarkBlue: "hsl(233, 47%, 7%)",
+        spccDarkDesaturatedBlue: "hsl(244, 38%, 16%)",
+        spccSoftViolet: "hsl(277, 64%, 61%)",
+        spccSlightlyTransparentWhite1: "hsla(0, 0%, 100%, 0.75)",
+        spccSlightlyTransparentWhite2: "hsla(0, 0%, 100%, 0.6)",
       },
       backgroundImage: {
         // 07 faq accordion
