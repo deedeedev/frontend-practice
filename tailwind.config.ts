@@ -87,6 +87,12 @@ const config: Config = {
         icwsufBlue: "hsl(248, 32%, 49%)",
         icwsufDarkBlue: "hsl(249, 10%, 26%)",
         icwsufGrayishBlue: "hsl(246, 25%, 77%)",
+        // 16 order summary component
+        oscPaleBlue: "hsl(225, 100%, 94%)",
+        oscBrightBlue: "hsl(245, 75%, 52%)",
+        oscVeryPaleBlue: "hsl(225, 100%, 98%)",
+        oscDesaturatedBlue: "hsl(224, 23%, 55%)",
+        oscDarkBlue: "hsl(223, 47%, 23%)",
       },
       backgroundImage: {
         // 07 faq accordion
