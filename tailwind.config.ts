@@ -83,6 +83,7 @@ const config: Config = {
         // 15 intro component with signup form
         icwsufRed: "hsl(0, 100%, 74%)",
         icwsufGreen: "hsl(154, 59%, 51%)",
+        icwsufDarkGreen: "hsl(154, 59%, 41%)",
         icwsufBlue: "hsl(248, 32%, 49%)",
         icwsufDarkBlue: "hsl(249, 10%, 26%)",
         icwsufGrayishBlue: "hsl(246, 25%, 77%)",

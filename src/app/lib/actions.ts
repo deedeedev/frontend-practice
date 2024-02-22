@@ -34,3 +34,50 @@ export async function bacspHandleForm(
     message: null,
   }
 }
+
+const ICWSFFormSchema = z.object({
+  firstName: z.string().min(1, { message: "First Name cannot be empty" }),
+  lastName: z.string().min(1, { message: "Last Name cannot be empty" }),
+  email: z
+    .string()
+    .min(1, { message: "Email cannot be empty" })
+    .email("Looks like this is not an email"),
+  password: z.string().min(1, { message: "Password cannot be empty" }),
+})
+
+export type ICWSFFormState =
+  | {
+      errors?: {
+        firstName?: string[]
+        lastName?: string[]
+        email?: string[]
+        password?: string[]
+      }
+      success?: boolean
+      message?: string | null
+    }
+  | undefined
+
+export async function icwsfHandleForm(
+  prevState: ICWSFFormState,
+  formData: FormData,
+) {
+  const validateFields = ICWSFFormSchema.safeParse({
+    firstName: formData.get("firstname"),
+    lastName: formData.get("lastname"),
+    email: formData.get("email"),
+    password: formData.get("password"),
+  })
+
+  if (!validateFields.success) {
+    return {
+      errors: validateFields.error.flatten().fieldErrors,
+      success: false,
+      message: "There are some errors.",
+    }
+  }
+
+  return {
+    success: true,
+  }
+}
