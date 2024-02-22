@@ -8,8 +8,10 @@ interface ColorPaletteProps {
 export default function ColorPalette({ colors }: ColorPaletteProps) {
   return (
     <div className="absolute inset-x-0 top-0 bg-white text-black">
-      {colors.map((color) => (
-        <div className={color.classname}>{color.name}</div>
+      {colors.map((color, i) => (
+        <div className={color.classname} key={i}>
+          {color.name}
+        </div>
       ))}
     </div>
   )
