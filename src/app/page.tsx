@@ -51,6 +51,9 @@ export default function Home() {
       <Link href="/frontend-mentor/17-stats-preview-card-component">
         17 Stats Preview Card Component
       </Link>
+      <Link href="/frontend-mentor/18-article-preview-component">
+        18 Article Preview Component
+      </Link>
     </main>
   )
 }

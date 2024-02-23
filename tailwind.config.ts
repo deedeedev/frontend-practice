@@ -99,6 +99,11 @@ const config: Config = {
         spccSoftViolet: "hsl(277, 64%, 61%)",
         spccSlightlyTransparentWhite1: "hsla(0, 0%, 100%, 0.75)",
         spccSlightlyTransparentWhite2: "hsla(0, 0%, 100%, 0.6)",
+        // 18 article preview component
+        apcVeryDarkGrayishBlue: "hsl(217, 19%, 35%)",
+        apcDesaturatedDarkBlue: "hsl(214, 17%, 51%)",
+        apcGrayishBlue: "hsl(212, 23%, 69%)",
+        apcLightGrayishBlue: "hsl(210, 46%, 95%)",
       },
       backgroundImage: {
         // 07 faq accordion
