@@ -121,6 +121,9 @@ const config: Config = {
           "url('/16-order-summary-component/pattern-background-mobile.svg')",
         oscDesktop:
           "url('/16-order-summary-component/pattern-background-desktop.svg')",
+        // 17 stats preview card component
+        spccDesktop:
+          "url('/17-stats-preview-card-component/image-header-desktop.jpg')",
       },
       backgroundPosition: {
         "position-social-proof-section": "left top, right bottom",
