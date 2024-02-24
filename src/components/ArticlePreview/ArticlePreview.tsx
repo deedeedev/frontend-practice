@@ -39,8 +39,8 @@ export default function ArticlePreview({ img, user }: ArticlePreviewProps) {
           </h1>
           <p>
             Ever been in a room and felt like something was missing? Perhaps it
-            felt slightly bare and uninviting. I've got some simple tips to help
-            you make any room feel complete.
+            felt slightly bare and uninviting. I&apos;ve got some simple tips to
+            help you make any room feel complete.
           </p>
         </div>
         {/* Avatar */}
