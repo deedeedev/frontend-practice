@@ -106,6 +106,7 @@ const config: Config = {
         apcLightGrayishBlue: "hsl(210, 46%, 95%)",
         // 19 single price grid component
         spgcCyan: "hsl(179, 62%, 43%)",
+        spgcLightCyan: "hsl(179, 47%, 52%)",
         spgcBrightYellow: "hsl(71, 73%, 54%)",
         spgcLightGray: "hsl(204, 43%, 93%)",
         spgcGrayishBlue: "hsl(218, 22%, 67%)",
