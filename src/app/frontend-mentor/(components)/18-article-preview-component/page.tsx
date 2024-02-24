@@ -1,23 +1,23 @@
 import { Manrope } from "next/font/google"
 import ArticlePreview from "@/components/ArticlePreview/ArticlePreview"
-import ColorPalette from "@/components/ColorPalette/ColorPalette"
 
-const colors = [
-  { name: "Very Dark Grayish Blue", value: "hsl(217, 19%, 35%)" },
-  { name: "Desaturated Dark Blue", value: "hsl(214, 17%, 51%)" },
-  { name: "Grayish Blue", value: "hsl(212, 23%, 69%)" },
-  { name: "Light Grayish Blue", value: "hsl(210, 46%, 95%)" },
-]
+import avatarImg from "./avatar-michelle.jpg"
+import drawersImg from "./drawers.jpg"
 
 const manrope = Manrope({ subsets: ["latin"], weight: ["500", "700"] })
+
+const user = {
+  name: "Michelle Appleton",
+  img: avatarImg,
+  date: new Date("28 Jun 2020"),
+}
 
 export default function Page() {
   return (
     <div
-      className={`${manrope.className} text-apcGrayishBlue flex min-h-dvh w-full items-center justify-center`}
+      className={`${manrope.className} text-apcDesaturatedDarkBlue bg-apcLightGrayishBlue flex min-h-dvh w-full items-center justify-center text-[13px]`}
     >
-      <ColorPalette colors={colors} />
-      <ArticlePreview />
+      <ArticlePreview img={drawersImg} user={user} />
     </div>
   )
 }
