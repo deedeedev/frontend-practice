@@ -54,6 +54,9 @@ export default function Home() {
       <Link href="/frontend-mentor/18-article-preview-component">
         18 Article Preview Component
       </Link>
+      <Link href="/frontend-mentor/19-single-price-grid-component">
+        19 Single Price Grid Component
+      </Link>
     </main>
   )
 }

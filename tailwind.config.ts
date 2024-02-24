@@ -104,6 +104,11 @@ const config: Config = {
         apcDesaturatedDarkBlue: "hsl(214, 17%, 51%)",
         apcGrayishBlue: "hsl(212, 23%, 69%)",
         apcLightGrayishBlue: "hsl(210, 46%, 95%)",
+        // 19 single price grid component
+        spgcCyan: "hsl(179, 62%, 43%)",
+        spgcBrightYellow: "hsl(71, 73%, 54%)",
+        spgcLightGray: "hsl(204, 43%, 93%)",
+        spgcGrayishBlue: "hsl(218, 22%, 67%)",
       },
       backgroundImage: {
         // 07 faq accordion
