@@ -8,12 +8,14 @@ import { cn } from "@/lib/utils"
 interface SignupFormInputFieldProps {
   name: string
   label: string
+  type?: string
   errors: string[] | undefined
 }
 
 export default function SignupFormInputField({
   name,
   label,
+  type = "text",
   errors,
 }: SignupFormInputFieldProps) {
   const [value, setValue] = useState<string>("")
@@ -22,7 +24,7 @@ export default function SignupFormInputField({
     <div>
       <div className="relative">
         <input
-          type="text"
+          type={type}
           name={name}
           placeholder={label}
           value={value}

@@ -28,11 +28,12 @@ export default function SignupForm() {
       <SignupFormInputField
         name="password"
         label="Password"
+        type="password"
         errors={state?.errors?.password}
       />
       <button
         type="submit"
-        className="border-icwsufDarkGreen w-full rounded border-x border-y-2 bg-icwsufGreen p-4 font-semibold uppercase hover:brightness-125"
+        className="w-full rounded border-x border-y-2 border-icwsufDarkGreen bg-icwsufGreen p-4 font-semibold uppercase hover:brightness-125"
       >
         {state?.success ? "thank you!" : "claim your free trial"}
       </button>
