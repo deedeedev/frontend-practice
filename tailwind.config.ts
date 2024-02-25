@@ -110,6 +110,11 @@ const config: Config = {
         spgcBrightYellow: "hsl(71, 73%, 54%)",
         spgcLightGray: "hsl(204, 43%, 93%)",
         spgcGrayishBlue: "hsl(218, 22%, 67%)",
+        // 20 ping single column coming soon page
+        psccspPaleBlue: "hsl(223, 100%, 88%)",
+        psccspLightRed: "hsl(354, 100%, 66%)",
+        psccspGray: "hsl(0, 0%, 59%)",
+        psccspVeryDarkBlue: "hsl(209, 33%, 12%)",
       },
       backgroundImage: {
         // 07 faq accordion

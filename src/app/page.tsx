@@ -57,6 +57,9 @@ export default function Home() {
       <Link href="/frontend-mentor/19-single-price-grid-component">
         19 Single Price Grid Component
       </Link>
+      <Link href="/frontend-mentor/20-ping-single-column-coming-soon-page">
+        20 Ping Single Column Coming Soon Page
+      </Link>
     </main>
   )
 }
