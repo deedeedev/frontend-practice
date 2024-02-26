@@ -15,7 +15,7 @@ const libreFranklin = Libre_Franklin({
 export default function Page() {
   return (
     <div
-      className={`${libreFranklin.className} text-psccspGray mx-auto flex min-h-dvh w-full max-w-[38rem] flex-col items-center justify-center gap-10 bg-white px-8 pb-8 pt-20 text-[20px]`}
+      className={`${libreFranklin.className} text-psccspGray mx-auto flex min-h-dvh w-full max-w-[38rem] flex-col items-center justify-center gap-12 bg-white px-8 pb-8 pt-20 text-[20px]`}
     >
       <Image src={logoImg} alt="logo" width={70} />
       <div className="space-y-3 text-center">
