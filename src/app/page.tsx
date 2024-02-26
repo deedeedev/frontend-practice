@@ -60,6 +60,9 @@ export default function Home() {
       <Link href="/frontend-mentor/20-ping-single-column-coming-soon-page">
         20 Ping Single Column Coming Soon Page
       </Link>
+      <Link href="/frontend-mentor/21-huddle-landing-page-with-single-introductory-section">
+        21 Huddle Landing Page With Single Introductory Section
+      </Link>
     </main>
   )
 }

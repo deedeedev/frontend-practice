@@ -116,6 +116,9 @@ const config: Config = {
         psccspLightRed: "hsl(354, 100%, 66%)",
         psccspGray: "hsl(0, 0%, 59%)",
         psccspVeryDarkBlue: "hsl(209, 33%, 12%)",
+        // 21 huddle landing page with single introductory section
+        hlpwsisViolet: "hsl(257, 40%, 49%)",
+        hlpwsisSoftMagenta: "hsl(300, 69%, 71%)",
       },
       backgroundImage: {
         // 07 faq accordion
@@ -141,6 +144,11 @@ const config: Config = {
         // 17 stats preview card component
         spccDesktop:
           "url('/17-stats-preview-card-component/image-header-desktop.jpg')",
+        // 21 huddle landing page with single introductory section
+        hlpwsisMobile:
+          "/21-huddle-landing-page-with-single-introductory-section/bg-mobile.svg",
+        hlpwsisDesktop:
+          "/21-huddle-landing-page-with-single-introductory-section/bg-desktop.svg",
       },
       backgroundPosition: {
         "position-social-proof-section": "left top, right bottom",
