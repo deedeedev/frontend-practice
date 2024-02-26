@@ -112,6 +112,7 @@ const config: Config = {
         spgcGrayishBlue: "hsl(218, 22%, 67%)",
         // 20 ping single column coming soon page
         psccspPaleBlue: "hsl(223, 100%, 88%)",
+        psccspBlue: "hsl(223, 87%, 63%)",
         psccspLightRed: "hsl(354, 100%, 66%)",
         psccspGray: "hsl(0, 0%, 59%)",
         psccspVeryDarkBlue: "hsl(209, 33%, 12%)",

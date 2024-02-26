@@ -81,3 +81,39 @@ export async function icwsfHandleForm(
     success: true,
   }
 }
+
+const PSCCSPFormSchema = z.object({
+  email: z
+    .string()
+    .min(1, { message: "This field is required" })
+    .email("Please provide a valid email"),
+})
+
+export type PSCCSPFormState = {
+  errors?: {
+    email?: string[]
+  }
+  success?: boolean
+  message?: string | null
+} | null
+
+export async function psccspHandleForm(
+  prevState: PSCCSPFormState,
+  formData: FormData,
+) {
+  const validateFields = PSCCSPFormSchema.safeParse({
+    email: formData.get("email"),
+  })
+
+  if (!validateFields.success) {
+    return {
+      errors: validateFields.error.flatten().fieldErrors,
+      success: false,
+      message: "There are some errors",
+    }
+  }
+
+  return {
+    success: true,
+  }
+}
