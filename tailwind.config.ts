@@ -146,9 +146,9 @@ const config: Config = {
           "url('/17-stats-preview-card-component/image-header-desktop.jpg')",
         // 21 huddle landing page with single introductory section
         hlpwsisMobile:
-          "/21-huddle-landing-page-with-single-introductory-section/bg-mobile.svg",
+          "url('/21-huddle-landing-page-with-single-introductory-section/bg-mobile.svg')",
         hlpwsisDesktop:
-          "/21-huddle-landing-page-with-single-introductory-section/bg-desktop.svg",
+          "url('/21-huddle-landing-page-with-single-introductory-section/bg-desktop.svg')",
       },
       backgroundPosition: {
         "position-social-proof-section": "left top, right bottom",
