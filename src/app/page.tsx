@@ -63,6 +63,9 @@ export default function Home() {
       <Link href="/frontend-mentor/21-huddle-landing-page-with-single-introductory-section">
         21 Huddle Landing Page With Single Introductory Section
       </Link>
+      <Link href="/frontend-mentor/22-age-calculator-app">
+        22 Age Calculator App
+      </Link>
     </main>
   )
 }

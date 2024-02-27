@@ -119,6 +119,13 @@ const config: Config = {
         // 21 huddle landing page with single introductory section
         hlpwsisViolet: "hsl(257, 40%, 49%)",
         hlpwsisSoftMagenta: "hsl(300, 69%, 71%)",
+        // 22 age calculator app
+        acaPurple: "hsl(259, 100%, 65%)",
+        acaLightRed: "hsl(0, 100%, 67%)",
+        acaOffWhite: "hsl(0, 0%, 94%)",
+        acaLightGray: "hsl(0, 0%, 86%)",
+        acaSmokeyGray: "hsl(0, 1%, 44%)",
+        acaOffBlack: "hsl(0, 0%, 8%)",
       },
       backgroundImage: {
         // 07 faq accordion
