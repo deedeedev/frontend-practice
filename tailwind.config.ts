@@ -126,6 +126,13 @@ const config: Config = {
         acaLightGray: "hsl(0, 0%, 86%)",
         acaSmokeyGray: "hsl(0, 1%, 44%)",
         acaOffBlack: "hsl(0, 0%, 8%)",
+        // 23 news homepage
+        nhSoftOrange: "hsl(35, 77%, 62%)",
+        nhSoftRed: "hsl(5, 85%, 63%)",
+        nhOffWhite: "hsl(36, 100%, 99%)",
+        nhGrayishBlue: "hsl(233, 8%, 79%)",
+        nhDarkGrayishBlue: "hsl(236, 13%, 42%)",
+        nhVeryDarkBlue: "hsl(240, 100%, 5%)",
       },
       backgroundImage: {
         // 07 faq accordion
