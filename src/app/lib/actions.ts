@@ -1,4 +1,5 @@
 import { z } from "zod"
+import { Temporal } from "@js-temporal/polyfill"
 
 const BACSPFormSchema = z.object({
   email: z
@@ -101,13 +102,13 @@ export async function psccspHandleForm(
   prevState: PSCCSPFormState,
   formData: FormData,
 ) {
-  const validateFields = PSCCSPFormSchema.safeParse({
+  const validatedFields = PSCCSPFormSchema.safeParse({
     email: formData.get("email"),
   })
 
-  if (!validateFields.success) {
+  if (!validatedFields.success) {
     return {
-      errors: validateFields.error.flatten().fieldErrors,
+      errors: validatedFields.error.flatten().fieldErrors,
       success: false,
       message: "There are some errors",
     }
@@ -115,5 +116,106 @@ export async function psccspHandleForm(
 
   return {
     success: true,
+  }
+}
+
+const currentYear = Temporal.Now.plainDateISO().year
+const ACAFormSchema = z.object({
+  day: z
+    .string()
+    .min(1, "This field is required")
+    .transform((v) => parseInt(v))
+    .refine((v) => !isNaN(v), "Day must be a number")
+    .refine((v) => v >= 1, "Day must be greater than 0")
+    .refine((v) => v <= 31, "Day must be between 1 and 31"),
+  month: z
+    .string()
+    .min(1, "This field is required")
+    .transform((v) => parseInt(v))
+    .refine((v) => !isNaN(v), "Month must be a number")
+    .refine((v) => v >= 1, "Month must be greater than 0")
+    .refine((v) => v <= 12, "Month must be between 1 and 12"),
+  year: z
+    .string()
+    .min(1, "This field is required")
+    .transform((v) => parseInt(v))
+    .refine((v) => !isNaN(v), "Year must be a number")
+    .refine((v) => v >= 1900, "Year must be greater than 1900")
+    .refine(
+      (v) => v <= currentYear,
+      `Year must be between 1900 and ${currentYear}`,
+    ),
+})
+
+export type ACAFormState = {
+  errors?: {
+    day?: string[]
+    month?: string[]
+    year?: string[]
+  }
+  success?: boolean
+  result?: {
+    years: number
+    months: number
+    days: number
+  }
+  message?: string | null
+} | null
+
+export async function acaHandleForm(
+  prevState: ACAFormState,
+  formData: FormData,
+) {
+  const validatedFields = ACAFormSchema.safeParse({
+    day: formData.get("day"),
+    month: formData.get("month"),
+    year: formData.get("year"),
+  })
+
+  if (!validatedFields.success) {
+    return {
+      errors: validatedFields.error.flatten().fieldErrors,
+      success: false,
+      message: "There are some errors",
+    }
+  }
+
+  const now = Temporal.Now.plainDateISO()
+  let birthDate: Temporal.PlainDate
+
+  try {
+    birthDate = Temporal.PlainDate.from(
+      {
+        day: Number(formData.get("day")),
+        month: Number(formData.get("month")),
+        year: Number(formData.get("year")),
+      },
+      {
+        overflow: "reject",
+      },
+    )
+  } catch (error) {
+    return {
+      success: false,
+      message: "Please insert a valid date",
+    }
+  }
+
+  if (Temporal.PlainDate.compare(birthDate, now) >= 0) {
+    return {
+      success: false,
+      message: "Input date must be in the past",
+    }
+  }
+
+  const duration = birthDate.until(now)
+  const { years, months, days } = duration.round({
+    largestUnit: "year",
+    relativeTo: now,
+  })
+
+  return {
+    success: true,
+    result: { years, months, days },
   }
 }

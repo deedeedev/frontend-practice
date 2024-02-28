@@ -6,9 +6,11 @@ const poppins = Poppins({ subsets: ["latin"], weight: ["400", "700", "800"] })
 export default function Page() {
   return (
     <div
-      className={`${poppins.className} bg-acaLightGray flex min-h-dvh w-full items-center justify-center text-[32px] text-black`}
+      className={`${poppins.className} bg-acaLightGray flex min-h-dvh w-full items-center justify-center text-xl`}
     >
-      <AgeCalculatorApp />
+      <div className="w-full px-4">
+        <AgeCalculatorApp />
+      </div>
     </div>
   )
 }
