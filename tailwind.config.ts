@@ -133,6 +133,11 @@ const config: Config = {
         nhGrayishBlue: "hsl(233, 8%, 79%)",
         nhDarkGrayishBlue: "hsl(236, 13%, 42%)",
         nhVeryDarkBlue: "hsl(240, 100%, 5%)",
+        // 24 newsletter signup with success message
+        nswsmTomato: "hsl(4, 100%, 67%)",
+        nswsmDarkSlateGray: "hsl(234, 29%, 20%)",
+        nswsmCharcoalGray: "hsl(235, 18%, 26%)",
+        nswsmGray: "hsl(231, 7%, 60%)",
       },
       backgroundImage: {
         // 07 faq accordion

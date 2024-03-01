@@ -67,6 +67,9 @@ export default function Home() {
         22 Age Calculator App
       </Link>
       <Link href="/frontend-mentor/23-news-homepage">23 News Homepage</Link>
+      <Link href="/frontend-mentor/24-newsletter-signup-with-success-message">
+        24 Newsletter Signup With Success Message
+      </Link>
     </main>
   )
 }

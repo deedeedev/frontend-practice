@@ -63,16 +63,16 @@ export async function icwsfHandleForm(
   prevState: ICWSFFormState,
   formData: FormData,
 ) {
-  const validateFields = ICWSFFormSchema.safeParse({
+  const validatedFields = ICWSFFormSchema.safeParse({
     firstName: formData.get("firstname"),
     lastName: formData.get("lastname"),
     email: formData.get("email"),
     password: formData.get("password"),
   })
 
-  if (!validateFields.success) {
+  if (!validatedFields.success) {
     return {
-      errors: validateFields.error.flatten().fieldErrors,
+      errors: validatedFields.error.flatten().fieldErrors,
       success: false,
       message: "There are some errors.",
     }
@@ -217,5 +217,41 @@ export async function acaHandleForm(
   return {
     success: true,
     result: { years, months, days },
+  }
+}
+
+const NSWSMFormSchema = z.object({
+  email: z
+    .string()
+    .min(1, { message: "This field is required" })
+    .email("Please provide a valid email"),
+})
+
+export type NSWSMFormState = {
+  errors?: {
+    email?: string[]
+  }
+  success?: boolean
+  message?: string
+} | null
+
+export async function nswsmHandleForm(
+  prevState: NSWSMFormState,
+  formData: FormData,
+) {
+  const validatedFields = NSWSMFormSchema.safeParse({
+    email: formData.get("email"),
+  })
+
+  if (!validatedFields.success) {
+    return {
+      errors: validatedFields.error.flatten().fieldErrors,
+      success: false,
+      message: "There are some errors",
+    }
+  }
+
+  return {
+    success: true,
   }
 }
