@@ -34,7 +34,7 @@ export default function Page() {
             <DesktopMenu items={data.menuItems} />
           </div>
         </header>
-        <main className="grid gap-16 md:grid-cols-3 md:gap-4 lg:gap-x-8 lg:gap-y-14">
+        <main className="grid gap-16 md:grid-cols-3 md:gap-x-4 md:gap-y-8 lg:gap-x-8 lg:gap-y-14">
           {/* Article */}
           <ArticleItem {...data.article} />
           {/* New */}
