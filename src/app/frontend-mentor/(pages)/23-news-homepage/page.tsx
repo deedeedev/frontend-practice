@@ -26,7 +26,11 @@ export default function Page() {
     >
       <div className="lg:pt-26 mx-auto flex max-w-[calc(1110rem/16)] flex-col gap-8 px-4 pb-12 pt-6 sm:pt-20 lg:gap-12">
         <header className="flex items-center justify-between sm:col-span-2">
-          <Image src={logoImg} alt="logo" height={28} />
+          <Image
+            src={logoImg}
+            alt="logo"
+            className="h-[28px] w-auto sm:h-[40px]"
+          />
           <div className="sm:hidden">
             <MobileMenu items={data.menuItems} />
           </div>

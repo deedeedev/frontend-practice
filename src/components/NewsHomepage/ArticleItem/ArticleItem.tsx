@@ -47,7 +47,7 @@ export default function ArticleItem({
           sizes="(min-width: 1180px) 708px, (min-width: 780px) calc(56.58vw + 52px), calc(100vw - 32px)"
         />
       </picture>
-      <h1 className="mt-6 text-[2.7rem] font-extrabold leading-[2.7rem] text-nhVeryDarkBlue">
+      <h1 className="mt-6 text-[2.7rem] font-extrabold leading-[2.7rem] text-nhVeryDarkBlue lg:text-[3rem] lg:leading-[3.2rem]">
         {title}
       </h1>
       <div className="mt-6 flex flex-col justify-between gap-5">
