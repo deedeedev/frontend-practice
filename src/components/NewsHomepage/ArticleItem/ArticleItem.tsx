@@ -1,4 +1,4 @@
-import Image, { StaticImageData, getImageProps } from "next/image"
+import { getImageProps } from "next/image"
 import Link from "next/link"
 
 interface ArticleItemProps {
