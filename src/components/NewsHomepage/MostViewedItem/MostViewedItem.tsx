@@ -20,8 +20,8 @@ export default function MostViewedItem({
         src={img}
         alt={title}
         width={100}
-        height={250}
-        className="self-start"
+        height={127}
+        className="h-auto max-w-full self-start"
       />
       <div className="flex flex-col justify-start">
         <div className="text-3xl font-bold text-nhGrayishBlue">
