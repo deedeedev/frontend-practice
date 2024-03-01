@@ -27,6 +27,7 @@ export default function ArticleItem({
     width: 730,
     height: 300,
     quality: 80,
+    priority: true,
     src: images.desktop,
   })
   const { props } = getImageProps({
@@ -34,6 +35,7 @@ export default function ArticleItem({
     width: 610,
     height: 530,
     quality: 80,
+    priority: true,
     src: images.mobile,
   })
 
