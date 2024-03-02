@@ -70,6 +70,9 @@ export default function Home() {
       <Link href="/frontend-mentor/24-newsletter-signup-with-success-message">
         24 Newsletter Signup With Success Message
       </Link>
+      <Link href="/frontend-mentor/25-notifications-page">
+        25 Notifications Page
+      </Link>
     </main>
   )
 }

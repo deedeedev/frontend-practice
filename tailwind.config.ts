@@ -138,6 +138,15 @@ const config: Config = {
         nswsmDarkSlateGray: "hsl(234, 29%, 20%)",
         nswsmCharcoalGray: "hsl(235, 18%, 26%)",
         nswsmGray: "hsl(231, 7%, 60%)",
+        // 25 notifications page
+        npRed: "hsl(1, 90%, 64%)",
+        npBlue: "hsl(219, 85%, 26%)",
+        npVeryLightGrayishBlue: "hsl(210, 60%, 98%)",
+        npLightGrayishBlue1: "hsl(211, 68%, 94%)",
+        npLightGrayishBlue2: "hsl(205, 33%, 90%)",
+        npGrayishBlue: "hsl(219, 14%, 63%)",
+        npDarkGrayishBlue: "hsl(219, 12%, 42%)",
+        npVeryDarkBlue: "hsl(224, 21%, 14%)",
       },
       backgroundImage: {
         // 07 faq accordion
