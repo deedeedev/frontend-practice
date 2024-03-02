@@ -224,7 +224,7 @@ const NSWSMFormSchema = z.object({
   email: z
     .string()
     .min(1, { message: "This field is required" })
-    .email("Please provide a valid email"),
+    .email("Valid email required"),
 })
 
 export type NSWSMFormState = {

@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <div
-      className={`${roboto.className} bg-nswsmCharcoalGray text-nswsmDarkSlateGray flex min-h-dvh w-full items-center justify-center text-[16rem/16]`}
+      className={`${roboto.className} bg-nswsmCharcoalGray text-nswsmDarkSlateGray flex min-h-dvh w-full items-center justify-center text-[calc(16rem/16)]`}
     >
       <NewsLetterSignupWithSuccessMessage />
     </div>
