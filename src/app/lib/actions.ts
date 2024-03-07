@@ -255,3 +255,69 @@ export async function nswsmHandleForm(
     success: true,
   }
 }
+
+const ICDFSchema = z.object({
+  name: z.string().min(3, { message: "Can't be blank" }),
+  number: z
+    .string()
+    .min(16, { message: "Card number must contain 16 digits" })
+    .transform((v) => parseInt(v))
+    .refine((v) => !isNaN(v), "Wrong format, numbers only"),
+  expDay: z
+    .string()
+    .min(1, { message: "Can't be blank" })
+    .transform((v) => parseInt(v))
+    .refine((v) => !isNaN(v), "Day must be a number")
+    .refine((v) => v >= 1, "Day must be greater than 0")
+    .refine((v) => v <= 31, "Day must be between 1 and 31"),
+  expMonth: z
+    .string()
+    .min(1, "Can't be blank")
+    .transform((v) => parseInt(v))
+    .refine((v) => !isNaN(v), "Month must be a number")
+    .refine((v) => v >= 1, "Month must be greater than 0")
+    .refine((v) => v <= 12, "Month must be between 1 and 12"),
+  cvc: z
+    .string()
+    .min(1, "Can't be blank")
+    .length(3, "CVC must be 3 digits")
+    .transform((v) => parseInt(v))
+    .refine((v) => !isNaN(v), "CVC must be a number"),
+})
+
+export type ICDFormState = {
+  errors?: {
+    name?: string[]
+    number?: string[]
+    expDay?: string[]
+    expMonth?: string[]
+    cvc?: string[]
+  }
+  success?: boolean
+  message?: string
+} | null
+
+export async function icdfHandleForm(
+  prevState: ICDFormState,
+  formData: FormData,
+) {
+  const validatedFields = ICDFSchema.safeParse({
+    name: formData.get("name"),
+    number: formData.get("number"),
+    expDay: formData.get("expDay"),
+    expMonth: formData.get("expMonth"),
+    cvc: formData.get("cvc"),
+  })
+
+  if (!validatedFields.success) {
+    return {
+      errors: validatedFields.error.flatten().fieldErrors,
+      success: false,
+      message: "There are some errors",
+    }
+  }
+
+  return {
+    success: true,
+  }
+}

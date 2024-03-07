@@ -147,6 +147,13 @@ const config: Config = {
         npGrayishBlue: "hsl(219, 14%, 63%)",
         npDarkGrayishBlue: "hsl(219, 12%, 42%)",
         npVeryDarkBlue: "hsl(224, 21%, 14%)",
+        // 26 interactive card details form
+        icdfGradientFrom: "hsl(249, 99%, 64%)",
+        icdfGradientTo: "hsl(278, 94%, 30%)",
+        icdfRed: "hsl(0, 100%, 66%)",
+        icdfLightGrayishViolet: "hsl(270, 3%, 87%)",
+        icdfDarkGrayishViolet: "hsl(279, 6%, 55%)",
+        icdfVeryDarkViolet: "hsl(278, 68%, 11%)",
       },
       backgroundImage: {
         // 07 faq accordion

@@ -73,6 +73,9 @@ export default function Home() {
       <Link href="/frontend-mentor/25-notifications-page">
         25 Notifications Page
       </Link>
+      <Link href="/frontend-mentor/26-interactive-card-details-form">
+        26 Interactive Card Details Form
+      </Link>
     </main>
   )
 }
