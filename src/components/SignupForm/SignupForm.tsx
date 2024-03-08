@@ -3,7 +3,7 @@
 import Link from "next/link"
 import SignupFormInputField from "./SignupFormInputField"
 import { useFormState } from "react-dom"
-import { icwsfHandleForm } from "@/app/lib/actions"
+import { icwsfHandleForm } from "@/app/actions"
 
 export default function SignupForm() {
   const [state, dispatch] = useFormState(icwsfHandleForm, undefined)

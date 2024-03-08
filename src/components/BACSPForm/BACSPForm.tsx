@@ -2,7 +2,7 @@
 
 import Image from "next/image"
 import { useFormState } from "react-dom"
-import { bacspHandleForm } from "@/app/lib/actions"
+import { bacspHandleForm } from "@/app/actions"
 import { cn } from "@/lib/utils"
 
 import arrowIcon from "./icon-arrow.svg"

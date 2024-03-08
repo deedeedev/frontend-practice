@@ -2,7 +2,7 @@
 
 import { useFormState } from "react-dom"
 import Image from "next/image"
-import { acaHandleForm } from "@/app/lib/actions"
+import { acaHandleForm } from "@/app/actions"
 import AgeCalculatorInputField from "./AgeCalculatorInputField/AgeCalculatorInputField"
 
 import arrowIcon from "./icon-arrow.svg"
@@ -13,7 +13,7 @@ export default function AgeCalculatorApp() {
   return (
     <form
       action={dispatch}
-      className="text-acaOffBlack container mx-auto flex w-full max-w-[550px] flex-col gap-16 rounded-3xl rounded-br-[5.5rem] bg-white px-6 py-10 shadow-md sm:gap-8"
+      className="container mx-auto flex w-full max-w-[550px] flex-col gap-16 rounded-3xl rounded-br-[5.5rem] bg-white px-6 py-10 text-acaOffBlack shadow-md sm:gap-8"
     >
       {/* Datepicker */}
       <div className="flex justify-start gap-2">
@@ -41,7 +41,7 @@ export default function AgeCalculatorApp() {
         <hr />
         <button
           type="submit"
-          className="bg-acaPurple hover:bg-acaOffBlack absolute right-1/2 top-1/2 -translate-y-1/2 translate-x-1/2 rounded-full p-4 sm:right-0 sm:translate-x-0"
+          className="absolute right-1/2 top-1/2 -translate-y-1/2 translate-x-1/2 rounded-full bg-acaPurple p-4 hover:bg-acaOffBlack sm:right-0 sm:translate-x-0"
         >
           <Image src={arrowIcon} alt="submit" className="size-7" />
         </button>

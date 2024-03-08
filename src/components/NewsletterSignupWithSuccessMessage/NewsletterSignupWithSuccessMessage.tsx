@@ -5,7 +5,7 @@ import { useFormState } from "react-dom"
 import Image from "next/image"
 import Link from "next/link"
 import { cn } from "@/lib/utils"
-import { nswsmHandleForm } from "@/app/lib/actions"
+import { nswsmHandleForm } from "@/app/actions"
 
 import illustrationMobile from "./illustration-sign-up-mobile.svg"
 import illustrationDesktop from "./illustration-sign-up-desktop.svg"
@@ -70,7 +70,7 @@ export default function NewsLetterSignupWithSuccessMessage() {
                 "w-full rounded-lg border px-6 py-3.5 focus:outline-none",
                 {
                   "focus:border-nswsmDarkSlateGray": !state?.errors?.email,
-                  "border-nswsmTomato text-nswsmTomato bg-nswsmTomato/20 border":
+                  "border border-nswsmTomato bg-nswsmTomato/20 text-nswsmTomato":
                     state?.errors?.email,
                 },
               )}
@@ -78,7 +78,7 @@ export default function NewsLetterSignupWithSuccessMessage() {
           </div>
           <button
             type="submit"
-            className="bg-nswsmDarkSlateGray w-full rounded-lg py-4 text-center font-bold text-white hover:bg-gradient-to-r hover:from-[hsl(346,100%,66%)] hover:to-[hsl(14,100%,61%)] hover:shadow-2xl hover:shadow-[hsl(346,100%,66%)]"
+            className="w-full rounded-lg bg-nswsmDarkSlateGray py-4 text-center font-bold text-white hover:bg-gradient-to-r hover:from-[hsl(346,100%,66%)] hover:to-[hsl(14,100%,61%)] hover:shadow-2xl hover:shadow-[hsl(346,100%,66%)]"
           >
             Subscribe to monthly newsletter
           </button>
@@ -101,7 +101,7 @@ export default function NewsLetterSignupWithSuccessMessage() {
           subscription.
         </p>
         <button
-          className="bg-nswsmDarkSlateGray mt-auto w-full rounded-lg py-4 text-center font-bold text-white hover:bg-gradient-to-r hover:from-[hsl(346,100%,66%)] hover:to-[hsl(14,100%,61%)] hover:shadow-2xl hover:shadow-[hsl(346,100%,66%)]"
+          className="mt-auto w-full rounded-lg bg-nswsmDarkSlateGray py-4 text-center font-bold text-white hover:bg-gradient-to-r hover:from-[hsl(346,100%,66%)] hover:to-[hsl(14,100%,61%)] hover:shadow-2xl hover:shadow-[hsl(346,100%,66%)]"
           onClick={() => setIsSuccess(false)}
         >
           Dismiss message

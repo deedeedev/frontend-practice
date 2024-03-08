@@ -1,7 +1,7 @@
 "use client"
 
 import { useFormState } from "react-dom"
-import { psccspHandleForm } from "@/app/lib/actions"
+import { psccspHandleForm } from "@/app/actions"
 import { cn } from "@/lib/utils"
 
 export default function PingComingSoonForm() {
@@ -30,7 +30,7 @@ export default function PingComingSoonForm() {
       </div>
       <button
         type="submit"
-        className="bg-psccspBlue h-[40px] w-full rounded-full py-3 text-xs font-bold text-white shadow-lg hover:brightness-125 sm:max-w-44"
+        className="h-[40px] w-full rounded-full bg-psccspBlue py-3 text-xs font-bold text-white shadow-lg hover:brightness-125 sm:max-w-44"
       >
         Notify Me
       </button>
