@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <div
+    <main
       className={`${plusJakartaSans.className} flex min-h-dvh w-full items-center justify-center bg-npVeryLightGrayishBlue text-[calc(16rem/16)] text-npDarkGrayishBlue`}
     >
       {/* Container */}
@@ -60,6 +60,6 @@ export default function Page() {
           })}
         </div>
       </div>
-    </div>
+    </main>
   )
 }
