@@ -2,9 +2,7 @@ import { sql } from "drizzle-orm"
 import { sqliteTable, integer, text } from "drizzle-orm/sqlite-core"
 
 export const sessions = sqliteTable("sessions", {
-  id: integer("id", { mode: "number" })
-    .notNull()
-    .primaryKey({ autoIncrement: true }),
+  id: text("id").notNull().primaryKey(),
   userId: integer("user_id", { mode: "number" }).notNull(),
   token: text("token").notNull(),
   expiresAt: text("expires_at").notNull(),
